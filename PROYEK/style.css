@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background: #f5f5f5; 
+}
+html{
+    scroll-behavior: smooth;
+}
+section{
+    width: 100%;
+    height: 100vh;
+}
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    Left: 0;
+    background:#f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+section nav .logo img{
+    width: 70px;
+    cursor: pointer;
+    margin: 5px;
+}
+section nav ul{
+    list-style: none;
+    margin-left: 400px;
+}
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+section nav ul li a{
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #68d66f;
+    display: block;
+    transition: 0.2s;
+}
+section nav ul li a:hover::after{
+    width: 100%;
+}
+section nav ul li a:hover{
+    color: #68d66f;
+}
+section nav .icon i{
+    font-size: 18px ;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+section nav .icon i:hover{
+    color: #68d66f;
+}
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 100px;
+}
+section .main .men_text h1{
+    position: relative;
+    font-size: 40px;
+    bottom: 136px;
+    Left: 109px;
+}
+.men_text h1 span{
+    color: #68d66f;
+    font-size: 40px;
+}
+.men_text h2{
+    background: #68d66f;
+    padding: 3px;
+    width: 269px;
+    text-align: center;
+    font-size: 17px;
+    position: relative;
+    bottom: 99px;
+    color: #fff;
+    Left: 105px;
+    cursor: pointer;
+    font-weight: normal;
+    border-radius: 30px 130px 30px;
+    transition: 0.3s;
+}
+.men_text h2:hover{
+    background: #000;
+
+}
+section .main .men_text h2 span{
+    color: #f5f5f5;
+    font-family: mv boli;
+    font-size: 25px;
+}
+section .main .main_image img{
+    position: relative;
+    width: 650px;
+    margin-left: 200px;
+
+}
+section p{
+    overflow: hidden;
+    width: 550px;
+    text-align: center;
+
+    position: relative;
+    Left: 123px;
+    bottom: 121px;
+    line-height: 22px;
+}
+ .main_btn{
+    background: #68d66f;
+    position: relative;
+    Left: 586px;
+    bottom: 90px;
+    width: 150px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 30px 130px 30px;
+    padding: 8px;
+    transition: 0.3s;
+ }
+ .main_btn:hover{
+    background: #000;
+ }
+ .main_btn a{
+    color: #fff;
+    margin-right: 5px;
+
+ }
+ .main_btn i{
+    color: #fff;
+    transition: 0.3s;
+ }
+ .main_btn:hover i{
+    transform: translateX(7px);
+ }
+
+
+
+
+
+
+
+
+
+
+
+ .about{
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0;
+    background-image: urL(images/b5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-content: center;
+
+ }
+ .about_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .about_text h1 span{
+    color: #68d66f;
+    margin-right: 15px;
+ }
+ .about_text h1{
+    margin-top: 20px;
+    font-size: 45px;
+    position: relative;
+    bottom: 70px;
+ }
+ .about_text h3{
+    font-size: 30px;
+    margin-top: -50px;
+}
+.about_text p{
+    width: 1080px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 22px;
+}
+.about_btn{
+    background: #68d66f;
+    padding: 10px 30px;
+    color: #fff;
+    margin-left: 92px;
+    position: relative;
+    bottom: -260px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 30px 130px 30px;
+    transition: 0.3s;
+}
+.about_btn:hover{
+    background: #000;
+}
+
+
+
+.available{
+    width: 100%;
+    padding: 70px 0;
+
+}
+
+.available h1{
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.available h1 span{
+    color: #68d66f;
+    margin-left: 15px;
+}
+.av_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+.av_card{
+    width: 322px;
+    height: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.av_image{
+    width: 250px;
+    height: 250px;
+    margin: 0 a;
+    overflow: hidden;
+}
+.av_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+.av_image:hover{
+    transform: scale(1.1);
+}
+.av_info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: #68d66f;
+}
+.av_info p{
+    text-align: center;
+    margin-top: 10px;
+    line-height: 22px;
+}
